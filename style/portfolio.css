@@ -185,3 +185,23 @@ padding: 10px 20px;
 margin-bottom: 24px;
 border-style: none;
 }
+
+/* responsive design */
+
+.hide{
+    display: none;
+}
+@media screen and (max-width:576px) {
+  .skills-continer,
+  .resume-container,
+  footer,
+  .about-items{
+
+    flex-direction: column;
+    
+  }
+  footer,.about{
+    padding: 20px;
+   /* align-items: center; */
+  }
+}
