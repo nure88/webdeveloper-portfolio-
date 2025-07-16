@@ -188,20 +188,40 @@ border-style: none;
 
 /* responsive design */
 
-.hide{
-    display: none;
-}
+
 @media screen and (max-width:576px) {
   .skills-continer,
   .resume-container,
   footer,
-  .about-items{
+  .about-items,.banner,
+  nav,
+  nav > ul{
 
     flex-direction: column;
-    
+
+  }
+  nav > ul{
+    gap: 20px;
+    color: #474747;
+  }
+  .banner{
+    margin: 20px;
+  }
+  .banner-prortfolio-picture{
+    width: 100%;
   }
   footer,.about{
     padding: 20px;
    /* align-items: center; */
   }
+}
+/* tablet specific media query */
+
+
+
+
+@media screen and (min-width:576px) and (max-width:992px){
+ .banner{
+    flex-direction: column;
+ }   
 }
